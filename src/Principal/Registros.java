@@ -66,7 +66,7 @@ public class Registros extends javax.swing.JFrame {
                 btnAlumnoActionPerformed(evt);
             }
         });
-        jPanel1.add(btnAlumno, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 270, 200, 90));
+        jPanel1.add(btnAlumno, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 270, 200, 90));
 
         btnAdministrador.setBackground(new java.awt.Color(0, 0, 255));
         btnAdministrador.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
@@ -77,7 +77,7 @@ public class Registros extends javax.swing.JFrame {
                 btnAdministradorActionPerformed(evt);
             }
         });
-        jPanel1.add(btnAdministrador, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 380, -1, 90));
+        jPanel1.add(btnAdministrador, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 380, -1, 90));
 
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("@2023-7 by Blue Web");
@@ -91,7 +91,7 @@ public class Registros extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 480, 120, 70));
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 480, 120, 70));
 
         jLabel4.setFont(new java.awt.Font("Stencil", 2, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
