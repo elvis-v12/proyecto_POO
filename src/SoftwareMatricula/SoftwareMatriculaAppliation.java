@@ -1,6 +1,6 @@
 package SoftwareMatricula;
 
-import SoftwareMatricula.view.Alumno.jfrmAlumno;
+import SoftwareMatricula.view.alumno.jfrmAlumno;
 
 /**
  *
