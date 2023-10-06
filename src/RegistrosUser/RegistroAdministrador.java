@@ -5,7 +5,9 @@
 package RegistrosUser;
 
 import Principal.Registros;
-import vista.ListadoMatricula;
+
+import SofwareMatricula_vistaAdmin.ListadoMatricula;
+
 
 /**
  *
@@ -33,15 +35,15 @@ public class RegistroAdministrador extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        btnRegresar = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jSeparator3 = new javax.swing.JSeparator();
         jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -70,28 +72,6 @@ public class RegistroAdministrador extends javax.swing.JFrame {
         jLabel8.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 112, 46, 41));
 
-        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel10.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(354, 0, 46, 41));
-
-        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel12.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 559, 46, 41));
-
-        btnRegresar.setBackground(new java.awt.Color(0, 0, 204));
-        btnRegresar.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
-        btnRegresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/anterior_1.png"))); // NOI18N
-        btnRegresar.setText("Regresar");
-        btnRegresar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnRegresarActionPerformed(evt);
-            }
-        });
-        jPanel1.add(btnRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 40));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/admin.png"))); // NOI18N
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 250, 140, 130));
-
         jLabel13.setFont(new java.awt.Font("Stencil", 2, 18)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Nuestra señora del Carmen");
@@ -112,6 +92,19 @@ public class RegistroAdministrador extends javax.swing.JFrame {
 
         jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/IE(2).png"))); // NOI18N
         jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 430, -1, 100));
+        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 400, -1, -1));
+
+        jButton1.setBackground(new java.awt.Color(137, 137, 137));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Source/anterior_1.png"))); // NOI18N
+        jButton1.setText("REGRESAR");
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 140, 50));
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Source/admin.png"))); // NOI18N
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 250, -1, -1));
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Source/IE(2).png"))); // NOI18N
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 460, -1, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 600));
 
@@ -136,7 +129,7 @@ public class RegistroAdministrador extends javax.swing.JFrame {
         btnIngresar.setBackground(new java.awt.Color(73, 181, 172));
         btnIngresar.setFont(new java.awt.Font("Gotham Extra Light", 0, 18)); // NOI18N
         btnIngresar.setForeground(new java.awt.Color(255, 255, 255));
-        btnIngresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/ingresar.png"))); // NOI18N
+        btnIngresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Source/ingresar.png"))); // NOI18N
         btnIngresar.setText("Ingresar");
         btnIngresar.setBorderPainted(false);
         btnIngresar.setContentAreaFilled(false);
@@ -210,7 +203,7 @@ public class RegistroAdministrador extends javax.swing.JFrame {
         btnSalir.setBackground(new java.awt.Color(73, 181, 172));
         btnSalir.setFont(new java.awt.Font("Gotham Extra Light", 0, 18)); // NOI18N
         btnSalir.setForeground(new java.awt.Color(255, 255, 255));
-        btnSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/salida.png"))); // NOI18N
+        btnSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Source/salida.png"))); // NOI18N
         btnSalir.setText("Salir");
         btnSalir.setBorderPainted(false);
         btnSalir.setContentAreaFilled(false);
@@ -230,12 +223,6 @@ public class RegistroAdministrador extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
-        Registros registro=new Registros();
-        registro.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_btnRegresarActionPerformed
 
     private void btnIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarActionPerformed
 ListadoMatricula lista=new ListadoMatricula();
@@ -310,15 +297,15 @@ dispose();
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnIngresar;
-    private javax.swing.JButton btnRegresar;
     private javax.swing.JButton btnSalir;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

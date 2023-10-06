@@ -31,19 +31,27 @@ public class Registros extends javax.swing.JFrame {
     private void initComponents() {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
+        jLabel15 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         btnAlumno = new javax.swing.JButton();
         btnAdministrador = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jSeparator3 = new javax.swing.JSeparator();
         jLabel14 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        btnAlumno1 = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SourseLogo/IE(2).png"))); // NOI18N
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Principal");
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -57,41 +65,31 @@ public class Registros extends javax.swing.JFrame {
         jLabel2.setText("COLEGIO");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 30, -1, -1));
 
-        btnAlumno.setBackground(new java.awt.Color(0, 0, 255));
+        btnAlumno.setBackground(new java.awt.Color(255, 0, 0));
         btnAlumno.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
-        btnAlumno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/estudiante.png"))); // NOI18N
-        btnAlumno.setText("ALUMNO");
+        btnAlumno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Source/cerca.png"))); // NOI18N
+        btnAlumno.setText("CERRAR");
         btnAlumno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAlumnoActionPerformed(evt);
             }
         });
-        jPanel1.add(btnAlumno, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 270, 200, 90));
+        jPanel1.add(btnAlumno, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 480, 160, 70));
 
         btnAdministrador.setBackground(new java.awt.Color(0, 0, 255));
         btnAdministrador.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
-        btnAdministrador.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/administrador.png"))); // NOI18N
+        btnAdministrador.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Source/administrador.png"))); // NOI18N
         btnAdministrador.setText("ADMINISTRADOR");
         btnAdministrador.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAdministradorActionPerformed(evt);
             }
         });
-        jPanel1.add(btnAdministrador, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 380, -1, 90));
+        jPanel1.add(btnAdministrador, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 380, -1, 80));
 
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("@2023-7 by Blue Web");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 570, -1, -1));
-
-        jButton3.setBackground(new java.awt.Color(204, 0, 0));
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/cerca.png"))); // NOI18N
-        jButton3.setText("CERRAR");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 480, 120, 70));
 
         jLabel4.setFont(new java.awt.Font("Stencil", 2, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
@@ -104,6 +102,25 @@ public class Registros extends javax.swing.JFrame {
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/IE(2).png"))); // NOI18N
         jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 150, -1, 100));
+        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 150, -1, -1));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, -1, -1));
+
+        btnAlumno1.setBackground(new java.awt.Color(0, 0, 255));
+        btnAlumno1.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
+        btnAlumno1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Source/estudiante.png"))); // NOI18N
+        btnAlumno1.setText("ALUMNO");
+        btnAlumno1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAlumno1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnAlumno1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 270, 200, 80));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Source/colegio.png"))); // NOI18N
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, -1, -1));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Source/IE(2).png"))); // NOI18N
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 150, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -126,15 +143,15 @@ public class Registros extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_btnAlumnoActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-       dispose();
-    }//GEN-LAST:event_jButton3ActionPerformed
-
     private void btnAdministradorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdministradorActionPerformed
        RegistroAdministrador admi=new RegistroAdministrador();
         admi.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnAdministradorActionPerformed
+
+    private void btnAlumno1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAlumno1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAlumno1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -174,13 +191,18 @@ public class Registros extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAdministrador;
     private javax.swing.JButton btnAlumno;
+    private javax.swing.JButton btnAlumno1;
     private javax.swing.ButtonGroup buttonGroup1;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JSeparator jSeparator3;
     // End of variables declaration//GEN-END:variables

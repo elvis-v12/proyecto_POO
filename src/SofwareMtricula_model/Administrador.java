@@ -1,7 +1,5 @@
 
-package modelo;
-
-import controlador.*;
+package SofwareMtricula_model;
 
 /**
  *
