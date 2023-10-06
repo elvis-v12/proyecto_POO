@@ -8,14 +8,13 @@ package SoftwareMatricula.view.alumno;
  *
  * @author Elvis
  */
-public class jfrmMatriculaAlumno extends javax.swing.JFrame {
+public class ListadoMatricula extends javax.swing.JFrame {
 
     /**
-     * Creates new form MatriculaAlumno
+     * Creates new form ListadoMatricula
      */
-    public jfrmMatriculaAlumno() {
+    public ListadoMatricula() {
         initComponents();
-        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -27,14 +26,11 @@ public class jfrmMatriculaAlumno extends javax.swing.JFrame {
         // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
         private void initComponents() {
 
-                jPanel6 = new javax.swing.JPanel();
-                jLabel34 = new javax.swing.JLabel();
-                jSeparator3 = new javax.swing.JSeparator();
-                jLabel1 = new javax.swing.JLabel();
-                jLabel33 = new javax.swing.JLabel();
-                jLabel2 = new javax.swing.JLabel();
                 jPanel1 = new javax.swing.JPanel();
-                jLabel3 = new javax.swing.JLabel();
+                jScrollPane18 = new javax.swing.JScrollPane();
+                jtblAlumnos1 = new javax.swing.JTable();
+                jScrollPane19 = new javax.swing.JScrollPane();
+                jtblNotas_Alumno16 = new javax.swing.JTable();
                 jPanel27 = new javax.swing.JPanel();
                 jtxtNombre1 = new javax.swing.JTextField();
                 jLabel11 = new javax.swing.JLabel();
@@ -48,44 +44,71 @@ public class jfrmMatriculaAlumno extends javax.swing.JFrame {
                 jtxtDNI1 = new javax.swing.JTextField();
                 jLabel16 = new javax.swing.JLabel();
                 jtxtGrado1 = new javax.swing.JTextField();
-                jLabel4 = new javax.swing.JLabel();
-                jtxtGrado2 = new javax.swing.JTextField();
+                jtxtBuscar1 = new javax.swing.JTextField();
                 jButton1 = new javax.swing.JButton();
+                jLabel32 = new javax.swing.JLabel();
+                jLabel33 = new javax.swing.JLabel();
+                jLabel34 = new javax.swing.JLabel();
+                jSeparator3 = new javax.swing.JSeparator();
+                jtbnRegistrar4 = new javax.swing.JButton();
+                jtbnActualizar4 = new javax.swing.JButton();
+                jtbnEliminar4 = new javax.swing.JButton();
                 jButton2 = new javax.swing.JButton();
-                jButton3 = new javax.swing.JButton();
+                jLabel1 = new javax.swing.JLabel();
 
                 setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-                setTitle("Matricula del alumno");
+                setExtendedState(6);
                 setResizable(false);
+                getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-                jPanel6.setBackground(new java.awt.Color(0, 102, 102));
-                jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+                jPanel1.setBackground(new java.awt.Color(33, 45, 62));
+                jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-                jLabel34.setFont(new java.awt.Font("Stencil", 2, 18)); // NOI18N
-                jLabel34.setForeground(new java.awt.Color(255, 255, 255));
-                jLabel34.setText("Nuestra señora del Carmen");
-                jPanel6.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 20, 270, 40));
+                jtblAlumnos1.setBackground(new java.awt.Color(51, 51, 255));
+                jtblAlumnos1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(208, 208, 208)));
+                jtblAlumnos1.setFont(new java.awt.Font("Cascadia Mono", 0, 12)); // NOI18N
+                jtblAlumnos1.setModel(new javax.swing.table.DefaultTableModel(
+                        new Object [][] {
 
-                jSeparator3.setBackground(new java.awt.Color(0, 0, 255));
-                jSeparator3.setForeground(new java.awt.Color(0, 0, 204));
-                jPanel6.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 50, 310, 10));
+                        },
+                        new String [] {
+                                "ID", "DNI", "Nombre", "Apellido Paterno", "Apellido Materno", "Edad", "Grado"
+                        }
+                ) {
+                        Class[] types = new Class [] {
+                                java.lang.Integer.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class
+                        };
 
-                jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Source/IE(2).png"))); // NOI18N
-                jPanel6.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 0, -1, -1));
+                        public Class getColumnClass(int columnIndex) {
+                                return types [columnIndex];
+                        }
+                });
+                jScrollPane18.setViewportView(jtblAlumnos1);
 
-                jLabel33.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 48)); // NOI18N
-                jLabel33.setForeground(new java.awt.Color(255, 255, 255));
-                jLabel33.setText("COLEGIO");
-                jPanel6.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 0, -1, -1));
+                jPanel1.add(jScrollPane18, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, 1010, 110));
 
-                jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-                jLabel2.setText("MATRICULATE YA!");
-                jPanel6.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 100, -1, -1));
+                jtblNotas_Alumno16.setBackground(new java.awt.Color(255, 102, 51));
+                jtblNotas_Alumno16.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(208, 208, 208)));
+                jtblNotas_Alumno16.setFont(new java.awt.Font("Cascadia Mono", 0, 12)); // NOI18N
+                jtblNotas_Alumno16.setModel(new javax.swing.table.DefaultTableModel(
+                        new Object [][] {
 
-                jPanel1.setBackground(new java.awt.Color(0, 102, 102));
+                        },
+                        new String [] {
+                                "Año", "Bimestre 1", "Bimestre 2", "Bimestre 3", "Bimestre 4", "Promedio Final"
+                        }
+                ) {
+                        Class[] types = new Class [] {
+                                java.lang.Integer.class, java.lang.Integer.class, java.lang.Integer.class, java.lang.Integer.class, java.lang.Integer.class, java.lang.Integer.class
+                        };
 
-                jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-                jLabel3.setText("COMPLETE TUS RESPECTIVOS DATOS;");
+                        public Class getColumnClass(int columnIndex) {
+                                return types [columnIndex];
+                        }
+                });
+                jScrollPane19.setViewportView(jtblNotas_Alumno16);
+
+                jPanel1.add(jScrollPane19, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 190, 640, 440));
 
                 jPanel27.setBackground(new java.awt.Color(255, 255, 102));
 
@@ -125,10 +148,11 @@ public class jfrmMatriculaAlumno extends javax.swing.JFrame {
                 jtxtGrado1.setFont(new java.awt.Font("Cascadia Mono", 0, 12)); // NOI18N
                 jtxtGrado1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(208, 208, 208)));
 
-                jLabel4.setText("Telefono:");
+                jtxtBuscar1.setFont(new java.awt.Font("Cascadia Mono", 0, 12)); // NOI18N
+                jtxtBuscar1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(208, 208, 208)));
 
-                jtxtGrado2.setFont(new java.awt.Font("Cascadia Mono", 0, 12)); // NOI18N
-                jtxtGrado2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(208, 208, 208)));
+                jLabel32.setFont(new java.awt.Font("Cascadia Mono", 0, 12)); // NOI18N
+                jLabel32.setText("Buscar:");
 
                 javax.swing.GroupLayout jPanel27Layout = new javax.swing.GroupLayout(jPanel27);
                 jPanel27.setLayout(jPanel27Layout);
@@ -146,7 +170,7 @@ public class jfrmMatriculaAlumno extends javax.swing.JFrame {
                                                 .addGroup(jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                         .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                                         .addGroup(jPanel27Layout.createSequentialGroup()
-                                                                .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, 183, Short.MAX_VALUE)
+                                                                .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                                                 .addGap(6, 6, 6)))
                                                 .addGap(194, 194, 194))
                                         .addGroup(jPanel27Layout.createSequentialGroup()
@@ -165,14 +189,17 @@ public class jfrmMatriculaAlumno extends javax.swing.JFrame {
                                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel27Layout.createSequentialGroup()
                                                 .addGroup(jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                                         .addComponent(jtxtNombre1, javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(jtxtDNI1, javax.swing.GroupLayout.Alignment.LEADING))
+                                                        .addComponent(jtxtDNI1, javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel27Layout.createSequentialGroup()
+                                                                .addComponent(jtxtBuscar1, javax.swing.GroupLayout.PREFERRED_SIZE, 287, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                                 .addGap(30, 30, 30))
                                         .addGroup(jPanel27Layout.createSequentialGroup()
-                                                .addComponent(jLabel4)
-                                                .addGap(0, 0, Short.MAX_VALUE))
-                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel27Layout.createSequentialGroup()
                                                 .addGroup(jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                        .addComponent(jtxtGrado2, javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel27Layout.createSequentialGroup()
+                                                                .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addGap(0, 0, Short.MAX_VALUE))
                                                         .addComponent(jtxtGrado1, javax.swing.GroupLayout.Alignment.LEADING)
                                                         .addComponent(jtxtEdad1, javax.swing.GroupLayout.Alignment.LEADING))
                                                 .addGap(30, 30, 30))))
@@ -181,6 +208,12 @@ public class jfrmMatriculaAlumno extends javax.swing.JFrame {
                         jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(jPanel27Layout.createSequentialGroup()
                                 .addContainerGap()
+                                .addComponent(jLabel32)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jtxtBuscar1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel16)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jtxtDNI1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -204,76 +237,56 @@ public class jfrmMatriculaAlumno extends javax.swing.JFrame {
                                 .addComponent(jLabel15)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jtxtGrado1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jtxtGrado2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap())
+                                .addContainerGap(12, Short.MAX_VALUE))
                 );
 
-                jButton1.setBackground(new java.awt.Color(33, 45, 62));
-                jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-                jButton1.setForeground(new java.awt.Color(255, 0, 0));
-                jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Source/cancelado.png"))); // NOI18N
-                jButton1.setText("Matricularme");
+                jPanel1.add(jPanel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 190, 370, 440));
+
+                jLabel33.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 48)); // NOI18N
+                jLabel33.setForeground(new java.awt.Color(255, 255, 255));
+                jLabel33.setText("COLEGIO");
+                jPanel1.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 0, -1, -1));
+
+                jLabel34.setFont(new java.awt.Font("Stencil", 2, 18)); // NOI18N
+                jLabel34.setForeground(new java.awt.Color(255, 255, 255));
+                jLabel34.setText("Nuestra señora del Carmen");
+                jPanel1.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 10, 270, 40));
+
+                jSeparator3.setBackground(new java.awt.Color(0, 0, 255));
+                jSeparator3.setForeground(new java.awt.Color(0, 0, 204));
+                jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 40, 310, 10));
+
+                jtbnRegistrar4.setBackground(new java.awt.Color(248, 248, 248));
+                jtbnRegistrar4.setFont(new java.awt.Font("Cascadia Mono", 1, 14)); // NOI18N
+                jtbnRegistrar4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Source/sitio-web(1).png"))); // NOI18N
+                jtbnRegistrar4.setText("Registrar");
+                jtbnRegistrar4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(208, 208, 208)));
+                jPanel1.add(jtbnRegistrar4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 640, 120, 40));
+
+                jtbnActualizar4.setBackground(new java.awt.Color(248, 248, 248));
+                jtbnActualizar4.setFont(new java.awt.Font("Cascadia Mono", 1, 14)); // NOI18N
+                jtbnActualizar4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Source/actualizar-pagina(1).png"))); // NOI18N
+                jtbnActualizar4.setText("Actualizar");
+                jtbnActualizar4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(208, 208, 208)));
+                jPanel1.add(jtbnActualizar4, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 640, 130, 40));
+
+                jtbnEliminar4.setBackground(new java.awt.Color(248, 248, 248));
+                jtbnEliminar4.setFont(new java.awt.Font("Cascadia Mono", 1, 14)); // NOI18N
+                jtbnEliminar4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Source/hombre(1).png"))); // NOI18N
+                jtbnEliminar4.setText("Eliminar");
+                jtbnEliminar4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(208, 208, 208)));
+                jPanel1.add(jtbnEliminar4, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 640, 120, 40));
 
                 jButton2.setBackground(new java.awt.Color(33, 45, 62));
                 jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-                jButton2.setForeground(new java.awt.Color(255, 0, 0));
-                jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Source/tesis(1).png"))); // NOI18N
-                jButton2.setText("Cancelar Matricula");
+                jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Source/anterior_1.png"))); // NOI18N
+                jButton2.setText("REGRESAR");
+                jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 140, 50));
 
-                javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-                jPanel1.setLayout(jPanel1Layout);
-                jPanel1Layout.setHorizontalGroup(
-                        jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                                .addComponent(jLabel3)
-                                                .addGap(157, 157, 157))
-                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                                .addComponent(jPanel27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(140, 140, 140))))
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(171, 171, 171)
-                                .addComponent(jButton1)
-                                .addGap(72, 72, 72)
-                                .addComponent(jButton2)
-                                .addGap(0, 90, Short.MAX_VALUE))
-                );
-                jPanel1Layout.setVerticalGroup(
-                        jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(jLabel3)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jPanel27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                );
+                jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Source/IE(2).png"))); // NOI18N
+                jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 0, -1, -1));
 
-                jPanel6.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 140, 680, 550));
-
-                jButton3.setBackground(new java.awt.Color(0, 102, 102));
-                jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-                jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Source/anterior_1.png"))); // NOI18N
-                jButton3.setText("REGRESAR");
-                jPanel6.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 140, 50));
-
-                javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-                getContentPane().setLayout(layout);
-                layout.setHorizontalGroup(
-                        layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                );
-                layout.setVerticalGroup(
-                        layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                );
+                getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1080, 720));
 
                 pack();
         }// </editor-fold>//GEN-END:initComponents
@@ -295,21 +308,20 @@ public class jfrmMatriculaAlumno extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(jfrmMatriculaAlumno.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ListadoMatricula.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(jfrmMatriculaAlumno.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ListadoMatricula.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(jfrmMatriculaAlumno.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ListadoMatricula.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(jfrmMatriculaAlumno.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ListadoMatricula.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new jfrmMatriculaAlumno().setVisible(true);
+                new ListadoMatricula().setVisible(true);
             }
         });
     }
@@ -317,7 +329,6 @@ public class jfrmMatriculaAlumno extends javax.swing.JFrame {
         // Variables declaration - do not modify//GEN-BEGIN:variables
         private javax.swing.JButton jButton1;
         private javax.swing.JButton jButton2;
-        private javax.swing.JButton jButton3;
         private javax.swing.JLabel jLabel1;
         private javax.swing.JLabel jLabel11;
         private javax.swing.JLabel jLabel12;
@@ -325,21 +336,25 @@ public class jfrmMatriculaAlumno extends javax.swing.JFrame {
         private javax.swing.JLabel jLabel14;
         private javax.swing.JLabel jLabel15;
         private javax.swing.JLabel jLabel16;
-        private javax.swing.JLabel jLabel2;
-        private javax.swing.JLabel jLabel3;
+        private javax.swing.JLabel jLabel32;
         private javax.swing.JLabel jLabel33;
         private javax.swing.JLabel jLabel34;
-        private javax.swing.JLabel jLabel4;
         private javax.swing.JPanel jPanel1;
         private javax.swing.JPanel jPanel27;
-        private javax.swing.JPanel jPanel6;
+        private javax.swing.JScrollPane jScrollPane18;
+        private javax.swing.JScrollPane jScrollPane19;
         private javax.swing.JSeparator jSeparator3;
+        private javax.swing.JTable jtblAlumnos1;
+        private javax.swing.JTable jtblNotas_Alumno16;
+        private javax.swing.JButton jtbnActualizar4;
+        private javax.swing.JButton jtbnEliminar4;
+        private javax.swing.JButton jtbnRegistrar4;
         private javax.swing.JTextField jtxtApellidoMaterno1;
         private javax.swing.JTextField jtxtApellidoPaterno1;
+        private javax.swing.JTextField jtxtBuscar1;
         private javax.swing.JTextField jtxtDNI1;
         private javax.swing.JTextField jtxtEdad1;
         private javax.swing.JTextField jtxtGrado1;
-        private javax.swing.JTextField jtxtGrado2;
         private javax.swing.JTextField jtxtNombre1;
         // End of variables declaration//GEN-END:variables
 }

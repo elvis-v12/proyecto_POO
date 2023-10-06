@@ -119,7 +119,7 @@ public class jfrmRegistro extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void btnAdministradorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdministradorActionPerformed
-            RegistroAdministrador admi = new RegistroAdministrador();
+            jfrmRegistroAdministrador admi = new jfrmRegistroAdministrador();
             admi.setVisible(true);
             dispose();
     }//GEN-LAST:event_btnAdministradorActionPerformed
