@@ -162,8 +162,8 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="jtxtApellidoMaterno1" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jtxtApellidoPaterno1" max="32767" attributes="0"/>
+                                  <Component id="jtxtApellidoMaterno" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jtxtApellidoPaterno" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                           </Group>
@@ -197,10 +197,10 @@
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="jtxtNombre1" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jtxtDNI1" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jtxtNombre" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jtxtDNI" alignment="0" max="32767" attributes="0"/>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jtxtBuscar1" min="-2" pref="287" max="-2" attributes="0"/>
+                                      <Component id="jtxtBuscar" min="-2" pref="287" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
                                       <Component id="jButton1" min="-2" pref="60" max="-2" attributes="0"/>
                                   </Group>
@@ -213,8 +213,8 @@
                                       <Component id="jLabel32" min="-2" pref="96" max="-2" attributes="0"/>
                                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                   </Group>
-                                  <Component id="jtxtGrado1" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jtxtEdad1" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jtxtGrado" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jtxtEdad" alignment="0" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                           </Group>
@@ -230,39 +230,39 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="jButton1" max="32767" attributes="0"/>
-                          <Component id="jtxtBuscar1" min="-2" pref="34" max="-2" attributes="0"/>
+                          <Component id="jtxtBuscar" min="-2" pref="34" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jtxtDNI1" min="-2" pref="33" max="-2" attributes="0"/>
+                      <Component id="jtxtDNI" min="-2" pref="33" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jtxtNombre1" min="-2" pref="33" max="-2" attributes="0"/>
+                      <Component id="jtxtNombre" min="-2" pref="33" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jtxtApellidoPaterno1" min="-2" pref="33" max="-2" attributes="0"/>
+                      <Component id="jtxtApellidoPaterno" min="-2" pref="33" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jtxtApellidoMaterno1" min="-2" pref="33" max="-2" attributes="0"/>
+                      <Component id="jtxtApellidoMaterno" min="-2" pref="33" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jtxtEdad1" min="-2" pref="33" max="-2" attributes="0"/>
+                      <Component id="jtxtEdad" min="-2" pref="33" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jtxtGrado1" min="-2" pref="33" max="-2" attributes="0"/>
+                      <Component id="jtxtGrado" min="-2" pref="33" max="-2" attributes="0"/>
                       <EmptySpace pref="19" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JTextField" name="jtxtNombre1">
+            <Component class="javax.swing.JTextField" name="jtxtNombre">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Cascadia Mono" size="12" style="0"/>
@@ -292,7 +292,7 @@
                 <Property name="text" type="java.lang.String" value="Apellido Paterno:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jtxtApellidoPaterno1">
+            <Component class="javax.swing.JTextField" name="jtxtApellidoPaterno">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Cascadia Mono" size="12" style="0"/>
@@ -306,7 +306,7 @@
                 </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jtxtApellidoMaterno1">
+            <Component class="javax.swing.JTextField" name="jtxtApellidoMaterno">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Cascadia Mono" size="12" style="0"/>
@@ -336,7 +336,7 @@
                 <Property name="text" type="java.lang.String" value="Edad:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jtxtEdad1">
+            <Component class="javax.swing.JTextField" name="jtxtEdad">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Cascadia Mono" size="12" style="0"/>
@@ -358,7 +358,7 @@
                 <Property name="text" type="java.lang.String" value="Grado:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jtxtDNI1">
+            <Component class="javax.swing.JTextField" name="jtxtDNI">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Cascadia Mono" size="12" style="0"/>
@@ -380,7 +380,7 @@
                 <Property name="text" type="java.lang.String" value="DNI:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jtxtGrado1">
+            <Component class="javax.swing.JTextField" name="jtxtGrado">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Cascadia Mono" size="12" style="0"/>
@@ -394,7 +394,7 @@
                 </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jtxtBuscar1">
+            <Component class="javax.swing.JTextField" name="jtxtBuscar">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Cascadia Mono" size="12" style="0"/>
@@ -409,6 +409,9 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JButton" name="jButton1">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel32">
               <Properties>

@@ -1,10 +1,16 @@
 package SoftwareMatricula.view.alumno;
 
+import SoftwareMatricula.controller.AlumnoController;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Noe Elvis Ramirez Herrera
  */
 public class jfrmListadoMatricula extends javax.swing.JFrame {
+
+        public static final AlumnoController ALUMNO_CONTROLLER = new AlumnoController();
+        private static final long serialVersionUID = 1L;
 
         public jfrmListadoMatricula() {
                 initComponents();
@@ -20,19 +26,19 @@ public class jfrmListadoMatricula extends javax.swing.JFrame {
                 jScrollPane19 = new javax.swing.JScrollPane();
                 jtblNotas_Alumno16 = new javax.swing.JTable();
                 jPanel27 = new javax.swing.JPanel();
-                jtxtNombre1 = new javax.swing.JTextField();
+                jtxtNombre = new javax.swing.JTextField();
                 jLabel11 = new javax.swing.JLabel();
                 jLabel12 = new javax.swing.JLabel();
-                jtxtApellidoPaterno1 = new javax.swing.JTextField();
-                jtxtApellidoMaterno1 = new javax.swing.JTextField();
+                jtxtApellidoPaterno = new javax.swing.JTextField();
+                jtxtApellidoMaterno = new javax.swing.JTextField();
                 jLabel13 = new javax.swing.JLabel();
                 jLabel14 = new javax.swing.JLabel();
-                jtxtEdad1 = new javax.swing.JTextField();
+                jtxtEdad = new javax.swing.JTextField();
                 jLabel15 = new javax.swing.JLabel();
-                jtxtDNI1 = new javax.swing.JTextField();
+                jtxtDNI = new javax.swing.JTextField();
                 jLabel16 = new javax.swing.JLabel();
-                jtxtGrado1 = new javax.swing.JTextField();
-                jtxtBuscar1 = new javax.swing.JTextField();
+                jtxtGrado = new javax.swing.JTextField();
+                jtxtBuscar = new javax.swing.JTextField();
                 jButton1 = new javax.swing.JButton();
                 jLabel32 = new javax.swing.JLabel();
                 jLabel33 = new javax.swing.JLabel();
@@ -100,8 +106,8 @@ public class jfrmListadoMatricula extends javax.swing.JFrame {
 
                 jPanel27.setBackground(new java.awt.Color(255, 255, 102));
 
-                jtxtNombre1.setFont(new java.awt.Font("Cascadia Mono", 0, 12)); // NOI18N
-                jtxtNombre1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(208, 208, 208)));
+                jtxtNombre.setFont(new java.awt.Font("Cascadia Mono", 0, 12)); // NOI18N
+                jtxtNombre.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(208, 208, 208)));
 
                 jLabel11.setFont(new java.awt.Font("Cascadia Mono", 0, 12)); // NOI18N
                 jLabel11.setText("Nombre:");
@@ -109,11 +115,11 @@ public class jfrmListadoMatricula extends javax.swing.JFrame {
                 jLabel12.setFont(new java.awt.Font("Cascadia Mono", 0, 12)); // NOI18N
                 jLabel12.setText("Apellido Paterno:");
 
-                jtxtApellidoPaterno1.setFont(new java.awt.Font("Cascadia Mono", 0, 12)); // NOI18N
-                jtxtApellidoPaterno1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(208, 208, 208)));
+                jtxtApellidoPaterno.setFont(new java.awt.Font("Cascadia Mono", 0, 12)); // NOI18N
+                jtxtApellidoPaterno.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(208, 208, 208)));
 
-                jtxtApellidoMaterno1.setFont(new java.awt.Font("Cascadia Mono", 0, 12)); // NOI18N
-                jtxtApellidoMaterno1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(208, 208, 208)));
+                jtxtApellidoMaterno.setFont(new java.awt.Font("Cascadia Mono", 0, 12)); // NOI18N
+                jtxtApellidoMaterno.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(208, 208, 208)));
 
                 jLabel13.setFont(new java.awt.Font("Cascadia Mono", 0, 12)); // NOI18N
                 jLabel13.setText("Apellido Materno:");
@@ -121,23 +127,29 @@ public class jfrmListadoMatricula extends javax.swing.JFrame {
                 jLabel14.setFont(new java.awt.Font("Cascadia Mono", 0, 12)); // NOI18N
                 jLabel14.setText("Edad:");
 
-                jtxtEdad1.setFont(new java.awt.Font("Cascadia Mono", 0, 12)); // NOI18N
-                jtxtEdad1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(208, 208, 208)));
+                jtxtEdad.setFont(new java.awt.Font("Cascadia Mono", 0, 12)); // NOI18N
+                jtxtEdad.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(208, 208, 208)));
 
                 jLabel15.setFont(new java.awt.Font("Cascadia Mono", 0, 12)); // NOI18N
                 jLabel15.setText("Grado:");
 
-                jtxtDNI1.setFont(new java.awt.Font("Cascadia Mono", 0, 12)); // NOI18N
-                jtxtDNI1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(208, 208, 208)));
+                jtxtDNI.setFont(new java.awt.Font("Cascadia Mono", 0, 12)); // NOI18N
+                jtxtDNI.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(208, 208, 208)));
 
                 jLabel16.setFont(new java.awt.Font("Cascadia Mono", 0, 12)); // NOI18N
                 jLabel16.setText("DNI:");
 
-                jtxtGrado1.setFont(new java.awt.Font("Cascadia Mono", 0, 12)); // NOI18N
-                jtxtGrado1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(208, 208, 208)));
+                jtxtGrado.setFont(new java.awt.Font("Cascadia Mono", 0, 12)); // NOI18N
+                jtxtGrado.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(208, 208, 208)));
 
-                jtxtBuscar1.setFont(new java.awt.Font("Cascadia Mono", 0, 12)); // NOI18N
-                jtxtBuscar1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(208, 208, 208)));
+                jtxtBuscar.setFont(new java.awt.Font("Cascadia Mono", 0, 12)); // NOI18N
+                jtxtBuscar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(208, 208, 208)));
+
+                jButton1.addActionListener(new java.awt.event.ActionListener() {
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                                jButton1ActionPerformed(evt);
+                        }
+                });
 
                 jLabel32.setFont(new java.awt.Font("Cascadia Mono", 0, 12)); // NOI18N
                 jLabel32.setText("Buscar:");
@@ -151,8 +163,8 @@ public class jfrmListadoMatricula extends javax.swing.JFrame {
                                 .addGroup(jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addGroup(jPanel27Layout.createSequentialGroup()
                                                 .addGroup(jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                        .addComponent(jtxtApellidoMaterno1, javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(jtxtApellidoPaterno1))
+                                                        .addComponent(jtxtApellidoMaterno, javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addComponent(jtxtApellidoPaterno))
                                                 .addGap(30, 30, 30))
                                         .addGroup(jPanel27Layout.createSequentialGroup()
                                                 .addGroup(jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -176,10 +188,10 @@ public class jfrmListadoMatricula extends javax.swing.JFrame {
                                                 .addGap(134, 134, 134))
                                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel27Layout.createSequentialGroup()
                                                 .addGroup(jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                        .addComponent(jtxtNombre1, javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(jtxtDNI1, javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addComponent(jtxtNombre, javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addComponent(jtxtDNI, javax.swing.GroupLayout.Alignment.LEADING)
                                                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel27Layout.createSequentialGroup()
-                                                                .addComponent(jtxtBuscar1, javax.swing.GroupLayout.PREFERRED_SIZE, 287, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                .addComponent(jtxtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 287, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                                                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                                 .addGap(30, 30, 30))
@@ -188,8 +200,8 @@ public class jfrmListadoMatricula extends javax.swing.JFrame {
                                                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel27Layout.createSequentialGroup()
                                                                 .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                                 .addGap(0, 0, Short.MAX_VALUE))
-                                                        .addComponent(jtxtGrado1, javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(jtxtEdad1, javax.swing.GroupLayout.Alignment.LEADING))
+                                                        .addComponent(jtxtGrado, javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addComponent(jtxtEdad, javax.swing.GroupLayout.Alignment.LEADING))
                                                 .addGap(30, 30, 30))))
                 );
                 jPanel27Layout.setVerticalGroup(
@@ -200,31 +212,31 @@ public class jfrmListadoMatricula extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                         .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jtxtBuscar1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(jtxtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel16)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jtxtDNI1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jtxtDNI, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel11)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jtxtNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jtxtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel12)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jtxtApellidoPaterno1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jtxtApellidoPaterno, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel13)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jtxtApellidoMaterno1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jtxtApellidoMaterno, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel14)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jtxtEdad1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jtxtEdad, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel15)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jtxtGrado1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jtxtGrado, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addContainerGap(19, Short.MAX_VALUE))
                 );
 
@@ -287,9 +299,26 @@ public class jfrmListadoMatricula extends javax.swing.JFrame {
         private void jtbnRegistrar4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtbnRegistrar4ActionPerformed
                 // TODO add your handling code here:
         }//GEN-LAST:event_jtbnRegistrar4ActionPerformed
-        public static void main(String[] args) {
-                java.awt.EventQueue.invokeLater(() -> new jfrmListadoMatricula().setVisible(true));
-        }
+
+        private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+                // Variables:
+                var txtbuscar = jtxtBuscar.getText();
+
+                // Proceso:
+                var alumno_buscado = ALUMNO_CONTROLLER.readAlumno(txtbuscar);
+                var message_busqueda = ALUMNO_CONTROLLER.getMessage_search();
+                // Reporte:
+                if (!message_busqueda.equals("Alumno encontrado exitosamente")) {
+                        jtxtDNI.setText(alumno_buscado.getDni());
+                        jtxtNombre.setText(alumno_buscado.getNombre());
+                        jtxtGrado.setText(alumno_buscado.getGrado());
+                        jtxtEdad.setText(String.valueOf(alumno_buscado.getEdad()));
+                        jtxtApellidoPaterno.setText(alumno_buscado.getApellido_paterno());
+                        jtxtApellidoMaterno.setText(alumno_buscado.getApellido_materno());
+                }
+                JOptionPane.showMessageDialog(null, message_busqueda);
+        }//GEN-LAST:event_jButton1ActionPerformed
+
         // Variables declaration - do not modify//GEN-BEGIN:variables
         private javax.swing.JButton jButton1;
         private javax.swing.JButton jButton2;
@@ -313,12 +342,12 @@ public class jfrmListadoMatricula extends javax.swing.JFrame {
         private javax.swing.JButton jtbnActualizar4;
         private javax.swing.JButton jtbnEliminar4;
         private javax.swing.JButton jtbnRegistrar4;
-        private javax.swing.JTextField jtxtApellidoMaterno1;
-        private javax.swing.JTextField jtxtApellidoPaterno1;
-        private javax.swing.JTextField jtxtBuscar1;
-        private javax.swing.JTextField jtxtDNI1;
-        private javax.swing.JTextField jtxtEdad1;
-        private javax.swing.JTextField jtxtGrado1;
-        private javax.swing.JTextField jtxtNombre1;
+        private javax.swing.JTextField jtxtApellidoMaterno;
+        private javax.swing.JTextField jtxtApellidoPaterno;
+        private javax.swing.JTextField jtxtBuscar;
+        private javax.swing.JTextField jtxtDNI;
+        private javax.swing.JTextField jtxtEdad;
+        private javax.swing.JTextField jtxtGrado;
+        private javax.swing.JTextField jtxtNombre;
         // End of variables declaration//GEN-END:variables
 }
