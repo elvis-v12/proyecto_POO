@@ -306,7 +306,7 @@ public class jfrmListadoMatricula extends javax.swing.JFrame {
 
                 // Proceso:
                 var alumno_buscado = ALUMNO_CONTROLLER.readAlumno(txtbuscar);
-                var message_busqueda = ALUMNO_CONTROLLER.getMessage_search();
+                var message_busqueda = ALUMNO_CONTROLLER.getMessage_busqueda();
                 // Reporte:
                 if (!message_busqueda.equals("Alumno encontrado exitosamente")) {
                         jtxtDNI.setText(alumno_buscado.getDni());

@@ -12,7 +12,7 @@ public class AlumnoController {
 
         // attributes:
         private static final AlumnoService ALUMNO_SERVICE = new AlumnoService();
-        private String message_search;
+        private String message_busqueda;
 
         // metodos:
         public void createAlumno(Alumno alumno) {
@@ -40,10 +40,11 @@ public class AlumnoController {
         }
 
         //getters
-        public String getMessage_search() {
-                var message_busqueda = this.message_search;
-                this.message_search = null;
+
+        public String getMessage_busqueda() {
+                var message_busqueda = this.message_busqueda;
+                this.message_busqueda = null;
                 return message_busqueda;
         }
-
+        
 }
