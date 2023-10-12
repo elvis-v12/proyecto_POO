@@ -16,209 +16,201 @@ public class jfrmRegistroAdministrador extends javax.swing.JFrame {
         }
 
         @SuppressWarnings("unchecked")
-        // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-        private void initComponents() {
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
 
-                jPanel1 = new javax.swing.JPanel();
-                jLabel2 = new javax.swing.JLabel();
-                jLabel8 = new javax.swing.JLabel();
-                jLabel10 = new javax.swing.JLabel();
-                jLabel12 = new javax.swing.JLabel();
-                btnRegresar = new javax.swing.JButton();
-                jLabel1 = new javax.swing.JLabel();
-                jLabel13 = new javax.swing.JLabel();
-                jLabel14 = new javax.swing.JLabel();
-                jLabel15 = new javax.swing.JLabel();
-                jSeparator3 = new javax.swing.JSeparator();
-                jLabel16 = new javax.swing.JLabel();
-                jPanel2 = new javax.swing.JPanel();
-                jLabel3 = new javax.swing.JLabel();
-                jLabel4 = new javax.swing.JLabel();
-                jLabel5 = new javax.swing.JLabel();
-                btnIngresar = new javax.swing.JButton();
-                txtUsuario = new javax.swing.JTextField();
-                txtContraseña = new javax.swing.JPasswordField();
-                jSeparator1 = new javax.swing.JSeparator();
-                jSeparator2 = new javax.swing.JSeparator();
-                jLabel6 = new javax.swing.JLabel();
-                jLabel7 = new javax.swing.JLabel();
-                jLabel9 = new javax.swing.JLabel();
-                btnSalir = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jSeparator3 = new javax.swing.JSeparator();
+        jLabel17 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        btnIngresar = new javax.swing.JButton();
+        txtUsuario = new javax.swing.JTextField();
+        txtContraseña = new javax.swing.JPasswordField();
+        jSeparator1 = new javax.swing.JSeparator();
+        jSeparator2 = new javax.swing.JSeparator();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        btnSalir = new javax.swing.JButton();
 
-                setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-                setUndecorated(true);
-                getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-                jPanel1.setBackground(new java.awt.Color(137, 137, 137));
-                jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel1.setBackground(new java.awt.Color(137, 137, 137));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-                jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-                jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 112, 236, -1));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 112, 236, -1));
 
-                jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-                jLabel8.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-                jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 112, 46, 41));
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel8.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 112, 46, 41));
 
-                jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-                jLabel10.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-                jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(354, 0, 46, 41));
+        jLabel13.setFont(new java.awt.Font("Stencil", 2, 18)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel13.setText("Nuestra señora del Carmen");
+        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 150, 270, 40));
 
-                jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-                jLabel12.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-                jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 559, 46, 41));
+        jLabel14.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 48)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel14.setText("COLEGIO");
+        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 80, -1, -1));
 
-                btnRegresar.setBackground(new java.awt.Color(0, 0, 204));
-                btnRegresar.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
-                btnRegresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/anterior_1.png"))); // NOI18N
-                btnRegresar.setText("Regresar");
-                btnRegresar.addActionListener(new java.awt.event.ActionListener() {
-                        public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                btnRegresarActionPerformed(evt);
-                        }
-                });
-                jPanel1.add(btnRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 40));
+        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel15.setText("@2023-7 by Blue Web");
+        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 580, -1, -1));
 
-                jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/admin.png"))); // NOI18N
-                jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 250, 140, 130));
+        jSeparator3.setBackground(new java.awt.Color(0, 0, 255));
+        jSeparator3.setForeground(new java.awt.Color(0, 0, 204));
+        jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 190, 310, 10));
+        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 400, -1, -1));
 
-                jLabel13.setFont(new java.awt.Font("Stencil", 2, 18)); // NOI18N
-                jLabel13.setForeground(new java.awt.Color(255, 255, 255));
-                jLabel13.setText("Nuestra señora del Carmen");
-                jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, 270, 40));
+        jButton1.setBackground(new java.awt.Color(137, 137, 137));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Source/anterior_1.png"))); // NOI18N
+        jButton1.setText("REGRESAR");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 140, 50));
 
-                jLabel14.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 48)); // NOI18N
-                jLabel14.setForeground(new java.awt.Color(255, 255, 255));
-                jLabel14.setText("COLEGIO");
-                jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 80, -1, -1));
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Source/admin.png"))); // NOI18N
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 250, -1, -1));
 
-                jLabel15.setForeground(new java.awt.Color(255, 255, 255));
-                jLabel15.setText("@2023-7 by Blue Web");
-                jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 580, -1, -1));
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Source/IE(2).png"))); // NOI18N
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 460, -1, -1));
 
-                jSeparator3.setBackground(new java.awt.Color(0, 0, 255));
-                jSeparator3.setForeground(new java.awt.Color(0, 0, 204));
-                jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 190, 310, 10));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 600));
 
-                jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/IE(2).png"))); // NOI18N
-                jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 430, -1, 100));
+        jPanel2.setBackground(new java.awt.Color(33, 45, 62));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-                getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 600));
+        jLabel3.setFont(new java.awt.Font("Gotham Thin", 0, 40)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("Iniciar Sesión");
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 60, 275, 53));
 
-                jPanel2.setBackground(new java.awt.Color(33, 45, 62));
-                jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jLabel4.setFont(new java.awt.Font("Gotham Thin", 0, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("CORREO:");
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, -1, -1));
 
-                jLabel3.setFont(new java.awt.Font("Gotham Thin", 0, 40)); // NOI18N
-                jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-                jLabel3.setText("Iniciar Sesión");
-                jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 60, 275, 53));
+        jLabel5.setFont(new java.awt.Font("Gotham Thin", 0, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("CONTRASEÑA:");
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, -1, -1));
 
-                jLabel4.setFont(new java.awt.Font("Gotham Thin", 0, 18)); // NOI18N
-                jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-                jLabel4.setText("CORREO:");
-                jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, -1, -1));
+        btnIngresar.setBackground(new java.awt.Color(73, 181, 172));
+        btnIngresar.setFont(new java.awt.Font("Gotham Extra Light", 0, 18)); // NOI18N
+        btnIngresar.setForeground(new java.awt.Color(255, 255, 255));
+        btnIngresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Source/ingresar.png"))); // NOI18N
+        btnIngresar.setText("Ingresar");
+        btnIngresar.setBorderPainted(false);
+        btnIngresar.setContentAreaFilled(false);
+        btnIngresar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnIngresar.setFocusPainted(false);
+        btnIngresar.setRequestFocusEnabled(false);
+        btnIngresar.setVerifyInputWhenFocusTarget(false);
+        btnIngresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnIngresarActionPerformed(evt);
+            }
+        });
+        btnIngresar.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                btnIngresarKeyPressed(evt);
+            }
+        });
+        jPanel2.add(btnIngresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 460, 210, 60));
 
-                jLabel5.setFont(new java.awt.Font("Gotham Thin", 0, 18)); // NOI18N
-                jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-                jLabel5.setText("CONTRASEÑA:");
-                jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, -1, -1));
+        txtUsuario.setBackground(new java.awt.Color(33, 45, 62));
+        txtUsuario.setFont(new java.awt.Font("Gotham Thin", 0, 18)); // NOI18N
+        txtUsuario.setForeground(new java.awt.Color(73, 181, 172));
+        txtUsuario.setBorder(null);
+        txtUsuario.setCaretColor(new java.awt.Color(73, 181, 172));
+        txtUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtUsuarioActionPerformed(evt);
+            }
+        });
+        txtUsuario.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtUsuarioKeyPressed(evt);
+            }
+        });
+        jPanel2.add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 230, 270, 40));
 
-                btnIngresar.setBackground(new java.awt.Color(73, 181, 172));
-                btnIngresar.setFont(new java.awt.Font("Gotham Extra Light", 0, 18)); // NOI18N
-                btnIngresar.setForeground(new java.awt.Color(255, 255, 255));
-                btnIngresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/ingresar.png"))); // NOI18N
-                btnIngresar.setText("Ingresar");
-                btnIngresar.setBorderPainted(false);
-                btnIngresar.setContentAreaFilled(false);
-                btnIngresar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-                btnIngresar.setFocusPainted(false);
-                btnIngresar.setRequestFocusEnabled(false);
-                btnIngresar.setVerifyInputWhenFocusTarget(false);
-                btnIngresar.addActionListener(new java.awt.event.ActionListener() {
-                        public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                btnIngresarActionPerformed(evt);
-                        }
-                });
-                btnIngresar.addKeyListener(new java.awt.event.KeyAdapter() {
-                        public void keyPressed(java.awt.event.KeyEvent evt) {
-                                btnIngresarKeyPressed(evt);
-                        }
-                });
-                jPanel2.add(btnIngresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 460, 210, 60));
+        txtContraseña.setBackground(new java.awt.Color(33, 45, 62));
+        txtContraseña.setFont(txtContraseña.getFont().deriveFont(txtContraseña.getFont().getSize()+7f));
+        txtContraseña.setForeground(new java.awt.Color(73, 181, 172));
+        txtContraseña.setBorder(null);
+        txtContraseña.setCaretColor(new java.awt.Color(73, 181, 172));
+        txtContraseña.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtContraseñaKeyPressed(evt);
+            }
+        });
+        jPanel2.add(txtContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 330, 270, 36));
 
-                txtUsuario.setBackground(new java.awt.Color(33, 45, 62));
-                txtUsuario.setFont(new java.awt.Font("Gotham Thin", 0, 18)); // NOI18N
-                txtUsuario.setForeground(new java.awt.Color(73, 181, 172));
-                txtUsuario.setBorder(null);
-                txtUsuario.setCaretColor(new java.awt.Color(73, 181, 172));
-                txtUsuario.addActionListener(new java.awt.event.ActionListener() {
-                        public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                txtUsuarioActionPerformed(evt);
-                        }
-                });
-                txtUsuario.addKeyListener(new java.awt.event.KeyAdapter() {
-                        public void keyPressed(java.awt.event.KeyEvent evt) {
-                                txtUsuarioKeyPressed(evt);
-                        }
-                });
-                jPanel2.add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 230, 270, 40));
+        jSeparator1.setBackground(new java.awt.Color(73, 181, 172));
+        jSeparator1.setForeground(new java.awt.Color(73, 181, 172));
+        jPanel2.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 270, 310, 10));
 
-                txtContraseña.setBackground(new java.awt.Color(33, 45, 62));
-                txtContraseña.setFont(txtContraseña.getFont().deriveFont(txtContraseña.getFont().getSize()+7f));
-                txtContraseña.setForeground(new java.awt.Color(73, 181, 172));
-                txtContraseña.setBorder(null);
-                txtContraseña.setCaretColor(new java.awt.Color(73, 181, 172));
-                txtContraseña.addKeyListener(new java.awt.event.KeyAdapter() {
-                        public void keyPressed(java.awt.event.KeyEvent evt) {
-                                txtContraseñaKeyPressed(evt);
-                        }
-                });
-                jPanel2.add(txtContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 330, 270, 36));
+        jSeparator2.setBackground(new java.awt.Color(73, 181, 172));
+        jSeparator2.setForeground(new java.awt.Color(73, 181, 172));
+        jPanel2.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 370, 310, 10));
+        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, 48, 36));
+        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 320, 48, 42));
 
-                jSeparator1.setBackground(new java.awt.Color(73, 181, 172));
-                jSeparator1.setForeground(new java.awt.Color(73, 181, 172));
-                jPanel2.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 270, 310, 10));
+        jLabel9.setFont(new java.awt.Font("Gotham Thin", 1, 24)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(73, 181, 172));
+        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel9.setText("x");
+        jLabel9.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jLabel9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel9MouseClicked(evt);
+            }
+        });
+        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 0, 30, 30));
 
-                jSeparator2.setBackground(new java.awt.Color(73, 181, 172));
-                jSeparator2.setForeground(new java.awt.Color(73, 181, 172));
-                jPanel2.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 370, 310, 10));
-                jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, 48, 36));
-                jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 320, 48, 42));
+        btnSalir.setBackground(new java.awt.Color(73, 181, 172));
+        btnSalir.setFont(new java.awt.Font("Gotham Extra Light", 0, 18)); // NOI18N
+        btnSalir.setForeground(new java.awt.Color(255, 255, 255));
+        btnSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Source/salida.png"))); // NOI18N
+        btnSalir.setText("Salir");
+        btnSalir.setBorderPainted(false);
+        btnSalir.setContentAreaFilled(false);
+        btnSalir.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnSalir.setFocusPainted(false);
+        btnSalir.setFocusable(false);
+        btnSalir.setRequestFocusEnabled(false);
+        btnSalir.setVerifyInputWhenFocusTarget(false);
+        btnSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalirActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 460, 210, 60));
 
-                jLabel9.setFont(new java.awt.Font("Gotham Thin", 1, 24)); // NOI18N
-                jLabel9.setForeground(new java.awt.Color(73, 181, 172));
-                jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-                jLabel9.setText("x");
-                jLabel9.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-                jLabel9.addMouseListener(new java.awt.event.MouseAdapter() {
-                        public void mouseClicked(java.awt.event.MouseEvent evt) {
-                                jLabel9MouseClicked(evt);
-                        }
-                });
-                jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 0, 30, 30));
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 0, 400, 600));
 
-                btnSalir.setBackground(new java.awt.Color(73, 181, 172));
-                btnSalir.setFont(new java.awt.Font("Gotham Extra Light", 0, 18)); // NOI18N
-                btnSalir.setForeground(new java.awt.Color(255, 255, 255));
-                btnSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/salida.png"))); // NOI18N
-                btnSalir.setText("Salir");
-                btnSalir.setBorderPainted(false);
-                btnSalir.setContentAreaFilled(false);
-                btnSalir.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-                btnSalir.setFocusPainted(false);
-                btnSalir.setFocusable(false);
-                btnSalir.setRequestFocusEnabled(false);
-                btnSalir.setVerifyInputWhenFocusTarget(false);
-                btnSalir.addActionListener(new java.awt.event.ActionListener() {
-                        public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                btnSalirActionPerformed(evt);
-                        }
-                });
-                jPanel2.add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 460, 210, 60));
-
-                getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 0, 400, 600));
-
-                pack();
-        }// </editor-fold>//GEN-END:initComponents
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
 
     private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
             jfrmRegistro registro = new jfrmRegistro();
@@ -262,32 +254,38 @@ public class jfrmRegistroAdministrador extends javax.swing.JFrame {
             System.exit(0);
     }//GEN-LAST:event_btnSalirActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        jfrmRegistro jfrmRegistro=new jfrmRegistro();
+        jfrmRegistro.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
 
-        // Variables declaration - do not modify//GEN-BEGIN:variables
-        private javax.swing.JButton btnIngresar;
-        private javax.swing.JButton btnRegresar;
-        private javax.swing.JButton btnSalir;
-        private javax.swing.JLabel jLabel1;
-        private javax.swing.JLabel jLabel10;
-        private javax.swing.JLabel jLabel12;
-        private javax.swing.JLabel jLabel13;
-        private javax.swing.JLabel jLabel14;
-        private javax.swing.JLabel jLabel15;
-        private javax.swing.JLabel jLabel16;
-        private javax.swing.JLabel jLabel2;
-        private javax.swing.JLabel jLabel3;
-        private javax.swing.JLabel jLabel4;
-        private javax.swing.JLabel jLabel5;
-        private javax.swing.JLabel jLabel6;
-        private javax.swing.JLabel jLabel7;
-        private javax.swing.JLabel jLabel8;
-        private javax.swing.JLabel jLabel9;
-        private javax.swing.JPanel jPanel1;
-        private javax.swing.JPanel jPanel2;
-        private javax.swing.JSeparator jSeparator1;
-        private javax.swing.JSeparator jSeparator2;
-        private javax.swing.JSeparator jSeparator3;
-        private javax.swing.JPasswordField txtContraseña;
-        public static javax.swing.JTextField txtUsuario;
-        // End of variables declaration//GEN-END:variables
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnIngresar;
+    private javax.swing.JButton btnSalir;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JSeparator jSeparator3;
+    private javax.swing.JPasswordField txtContraseña;
+    public static javax.swing.JTextField txtUsuario;
+    // End of variables declaration//GEN-END:variables
 }

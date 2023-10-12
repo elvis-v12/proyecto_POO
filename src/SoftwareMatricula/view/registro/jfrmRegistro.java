@@ -77,6 +77,7 @@ public class jfrmRegistro extends javax.swing.JFrame {
 
         btnAlumno.setBackground(new java.awt.Color(0, 0, 204));
         btnAlumno.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnAlumno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Source/estudiante.png"))); // NOI18N
         btnAlumno.setText("ALUMNO");
         btnAlumno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -87,6 +88,7 @@ public class jfrmRegistro extends javax.swing.JFrame {
 
         btnAdministrador.setBackground(new java.awt.Color(0, 0, 204));
         btnAdministrador.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnAdministrador.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Source/administrador.png"))); // NOI18N
         btnAdministrador.setText("ADMINISTRADOR");
         btnAdministrador.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
