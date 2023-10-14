@@ -128,7 +128,7 @@ public class jfrmRegistro extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAdministradorActionPerformed
 
     private void btnAlumnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAlumnoActionPerformed
-        jfrmMatriculaAlumno registro = new jfrmMatriculaAlumno();
+        jfrmRegistroAlumno registro = new jfrmRegistroAlumno();
             registro.setVisible(true);
             dispose();
     }//GEN-LAST:event_btnAlumnoActionPerformed
