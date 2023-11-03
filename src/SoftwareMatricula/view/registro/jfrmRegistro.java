@@ -149,13 +149,13 @@ ConexionSQL conexionSQL;
     private void btnRegistroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistroActionPerformed
 
         try {
-            String correo = txtUsuario.getText();// Reemplaza con el valor del correo
-    String password = txtContraseña.getText(); // Reemplaza con el valor de la contraseña
+            String correo = txtUsuario.getText();
+    String password = txtContraseña.getText(); 
     // Preparar la consulta
    String consultaSQL = "INSERT INTO ingreso (correo, password) VALUES (?, ?)";
 PreparedStatement preparedStatement = conexionSQL.getConnection().prepareStatement(consultaSQL);
-preparedStatement.setString(1, correo); // Reemplaza 'correo' con el valor del campo de correo que quieras insertar
-preparedStatement.setString(2, password); // Reemplaza 'password' con el valor del campo de contraseña que quieras insertar
+preparedStatement.setString(1, correo); 
+preparedStatement.setString(2, password); 
 
     // Ejecutar la consulta
     int filasAfectadas = preparedStatement.executeUpdate();

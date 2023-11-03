@@ -217,7 +217,6 @@ jfrmRegistro.setVisible(true);
                     try (ResultSet resultado = preparedStatement.executeQuery()) {
                         if (resultado.next()) {
                             // Usuario autenticado correctamente
-                            // Puedes realizar acciones adicionales aquí, como abrir una nueva ventana
                             System.out.println("Usuario autenticado correctamente");
                         } else {
                             // Usuario no autenticado
