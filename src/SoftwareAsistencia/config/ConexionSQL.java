@@ -25,7 +25,6 @@ public class ConexionSQL {
             System.err.println("Error de conexión: " + e.getMessage());
         }
     }
-
     public Connection getConnection() {
         return conexion;
     }

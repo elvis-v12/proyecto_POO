@@ -1,11 +1,11 @@
 package SoftwareMatricula.view.registro;
 import java.sql.Connection;
-import SoftwareAsistencia.config.ConexionSQL;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import SoftwareAsistencia.config.ConexionSQL;
-import SofwareRegistroAsistencia.view.Lista.jfrmListadoMatricula;
+import SofwareRegistroAsistencia.view.Lista.jfrmAsistencia;
+
 
 
 public class jfrmRegistroDocente extends javax.swing.JFrame {
@@ -152,7 +152,7 @@ public class jfrmRegistroDocente extends javax.swing.JFrame {
                 btnRegistrar1KeyPressed(evt);
             }
         });
-        jPanel2.add(btnRegistrar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 430, 210, 60));
+        jPanel2.add(btnRegistrar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 420, 210, 60));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 410, 600));
 
@@ -217,6 +217,9 @@ jfrmRegistro.setVisible(true);
                     try (ResultSet resultado = preparedStatement.executeQuery()) {
                         if (resultado.next()) {
                             // Usuario autenticado correctamente
+                            jfrmAsistencia jfrmAsistencia=new jfrmAsistencia();
+                            jfrmAsistencia.setVisible(true);
+                            dispose();
                             System.out.println("Usuario autenticado correctamente");
                         } else {
                             // Usuario no autenticado
