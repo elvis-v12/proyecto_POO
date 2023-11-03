@@ -28,29 +28,24 @@ public class jfrmListadoMatricula extends javax.swing.JPanel {
         jToggleButton4 = new javax.swing.JToggleButton();
         lbRegistroLogo1 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
+        jToggleButton5 = new javax.swing.JToggleButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         jPanel3.setBackground(new java.awt.Color(82, 130, 196));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null}
             },
             new String [] {
-                "Fecha", "Asignatura", "Estado", "Docente", "Justificacion"
+                "Fecha", "Asignatura", "Alumno", "Estado", "Docente", "Justificacion"
             }
-        ) {
-            boolean[] canEdit = new boolean [] {
-                true, false, true, true, true
-            };
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
+        ));
         jScrollPane2.setViewportView(jTable2);
 
         jPanel3.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, 990, 309));
@@ -71,9 +66,9 @@ public class jfrmListadoMatricula extends javax.swing.JPanel {
         });
         jPanel3.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(671, 130, 180, 49));
 
-        jToggleButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Source/tesis(1).png"))); // NOI18N
-        jToggleButton4.setText("REGISTRAR ASISTENCIQA");
-        jPanel3.add(jToggleButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 540, -1, -1));
+        jToggleButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Source/editar(1).png"))); // NOI18N
+        jToggleButton4.setText("MODIFICAR ASISTENCIA");
+        jPanel3.add(jToggleButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 540, -1, -1));
         jPanel3.add(lbRegistroLogo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, 160));
 
         jLabel10.setFont(new java.awt.Font("Gotham Thin", 1, 24)); // NOI18N
@@ -88,11 +83,26 @@ public class jfrmListadoMatricula extends javax.swing.JPanel {
         });
         jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 0, 30, 30));
 
+        jToggleButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Source/tesis(1).png"))); // NOI18N
+        jToggleButton5.setText("REGISTRAR ASISTENCIQA");
+        jPanel3.add(jToggleButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 540, -1, -1));
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jLabel2.setText("UNIVERSIDAD CESAR VALLEJO");
+        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 10, -1, -1));
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel1.setText("SOLO PARA LOS QUE QUIEREN SALIR ADELANTE");
+        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 60, -1, -1));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 1063, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -112,7 +122,9 @@ public class jfrmListadoMatricula extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane2;
@@ -120,6 +132,7 @@ public class jfrmListadoMatricula extends javax.swing.JPanel {
     private javax.swing.JTextField jTextField2;
     private javax.swing.JToggleButton jToggleButton3;
     private javax.swing.JToggleButton jToggleButton4;
+    private javax.swing.JToggleButton jToggleButton5;
     private javax.swing.JLabel lbRegistroLogo1;
     // End of variables declaration//GEN-END:variables
 }
