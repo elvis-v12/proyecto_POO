@@ -27,11 +27,12 @@ public class jfrmListadoMatricula extends javax.swing.JPanel {
         jTextField2 = new javax.swing.JTextField();
         jToggleButton4 = new javax.swing.JToggleButton();
         lbRegistroLogo1 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
         jToggleButton5 = new javax.swing.JToggleButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+
+        setEnabled(false);
 
         jPanel3.setBackground(new java.awt.Color(82, 130, 196));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -72,18 +73,6 @@ public class jfrmListadoMatricula extends javax.swing.JPanel {
         jPanel3.add(jToggleButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 540, -1, -1));
         jPanel3.add(lbRegistroLogo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, 160));
 
-        jLabel10.setFont(new java.awt.Font("Gotham Thin", 1, 24)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(73, 181, 172));
-        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel10.setText("x");
-        jLabel10.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jLabel10.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel10MouseClicked(evt);
-            }
-        });
-        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 0, 30, 30));
-
         jToggleButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Source/tesis(1).png"))); // NOI18N
         jToggleButton5.setText("REGISTRAR ASISTENCIQA");
         jPanel3.add(jToggleButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 540, -1, -1));
@@ -120,14 +109,9 @@ public class jfrmListadoMatricula extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
 
-    private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel10MouseClicked
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
