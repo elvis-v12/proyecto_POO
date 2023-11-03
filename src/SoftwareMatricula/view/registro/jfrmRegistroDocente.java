@@ -1,10 +1,10 @@
 package SoftwareMatricula.view.registro;
 import java.sql.Connection;
-import SoftwareMatricula.config.ConexionSQL;
+import SoftwareAsistencia.config.ConexionSQL;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import SoftwareMatricula.config.ConexionSQL;
+import SoftwareAsistencia.config.ConexionSQL;
 import SofwareRegistroAsistencia.view.Lista.jfrmListadoMatricula;
 
 
