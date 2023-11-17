@@ -4,52 +4,85 @@ import org.opencv.core.*;
 import org.opencv.imgcodecs.Imgcodecs;
 import org.opencv.imgproc.Imgproc;
 import org.opencv.objdetect.CascadeClassifier;
+import org.opencv.videoio.VideoCapture;
+import org.opencv.videoio.Videoio;
+import org.opencv.highgui.HighGui;
 
 public class ReconocimientoFacial {
 
     public static void main(String[] args) {
-        // Cargar la biblioteca OpenCV
         System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
-        System.load("C:/Users/Elvis/Downloads/opencv/build/java/x64/opencv_java480.dll");  // Ajusta la ruta según tu configuración
 
-        // Cargar el clasificador de caras (ajusta la ruta según tu configuración)
-        CascadeClassifier faceCascade = new CascadeClassifier("C:/Users/Elvis/Downloads/opencv/build/etc/haarcascades/haarcascade_frontalface_default.xml");
+        // Rutas de archivos
+        String classifierPath = "C:/Users/Elvis/Downloads/opencv/build/etc/haarcascades/haarcascade_frontalface_default.xml";
 
+        // Realizar reconocimiento facial desde la cámara
+        detectAndDrawFacesRealTime(classifierPath);
+    }
 
-        // Verificar si el clasificador de caras se cargó correctamente
+    private static void detectAndDrawFacesRealTime(String classifierPath) {
+        CascadeClassifier faceCascade = new CascadeClassifier(classifierPath);
+
         if (faceCascade.empty()) {
             System.err.println("Error: No se pudo cargar el clasificador de caras.");
             return;
         }
 
-        // Cargar la imagen en la que deseas realizar el reconocimiento facial (ajusta la ruta según tu configuración)
-        String imagePath = "C:/Users/Elvis/Downloads/free.jpeg";
-        Mat image = Imgcodecs.imread(imagePath);
+        VideoCapture videoCapture = new VideoCapture(0); // 0 represents the default camera
+        videoCapture.set(Videoio.CAP_PROP_FRAME_WIDTH, 640); // Set the width of the video frame
+        videoCapture.set(Videoio.CAP_PROP_FRAME_HEIGHT, 480); // Set the height of the video frame
 
-        // Verificar si la imagen se cargó correctamente
-        if (image.empty()) {
-            System.err.println("Error: No se pudo cargar la imagen: " + imagePath);
+        if (!videoCapture.isOpened()) {
+            System.err.println("Error: No se pudo abrir la cámara.");
             return;
         }
 
-        // Convertir la imagen a escala de grises
-        Mat grayImage = new Mat();
-        Imgproc.cvtColor(image, grayImage, Imgproc.COLOR_BGR2GRAY);
+        Mat frame = new Mat();
 
-        // Detectar caras en la imagen
-        MatOfRect faceDetections = new MatOfRect();
-        faceCascade.detectMultiScale(grayImage, faceDetections);
+        try {
+            while (true) {
+                videoCapture.read(frame);
 
-        // Dibujar un rectángulo alrededor de cada cara detectada
-        for (Rect rect : faceDetections.toArray()) {
-            Imgproc.rectangle(image, new Point(rect.x, rect.y), new Point(rect.x + rect.width, rect.y + rect.height),
-                    new Scalar(0, 255, 0), 2);
+                if (frame.empty()) {
+                    System.err.println("Error: No se pudo capturar el fotograma.");
+                    break;
+                }
+
+                Mat grayFrame = new Mat();
+                Imgproc.cvtColor(frame, grayFrame, Imgproc.COLOR_BGR2GRAY);
+
+                MatOfRect faceDetections = new MatOfRect();
+                faceCascade.detectMultiScale(grayFrame, faceDetections);
+
+                for (Rect rect : faceDetections.toArray()) {
+                    Imgproc.rectangle(frame, new Point(rect.x, rect.y), new Point(rect.x + rect.width, rect.y + rect.height),
+                            new Scalar(0, 255, 0), 2);
+                }
+
+                // Visualizar la imagen con los rectángulos dibujados
+                HighGui.imshow("Reconocimiento Facial", frame);
+
+                if (HighGui.waitKey(30) >= 0) {
+                    break;
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            // Cerrar la ventana al salir del bucle
+            HighGui.destroyAllWindows();
+
+            // Breve pausa para dar tiempo a que la ventana se cierre
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+            // Liberar la cámara al salir del bucle
+           videoCapture.release();
+HighGui.destroyAllWindows();
+System.gc();
         }
-
-        // Guardar la imagen con los rectángulos dibujados
-           String outputImagePath = "C:/ruta/completa/a/tu/imagen_con_caras.jpg";
-        Imgcodecs.imwrite(outputImagePath, image);
-        
-        System.out.println("Reconocimiento facial completado. Imagen guardada con rectángulos dibujados en: " + outputImagePath);
     }
 }
