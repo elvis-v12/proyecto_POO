@@ -1,10 +1,6 @@
 package SoftwareMatricula.view.registro;
-import java.sql.Connection;
-import SoftwareAsistencia.config.ConexionSQL;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import SoftwareAsistencia.config.ConexionSQL;
 import SoftwareAsistencia.config.ConexionSQL;
 
 public class jfrmRegistro extends javax.swing.JFrame {
