@@ -24,16 +24,13 @@ public class jfrmRegistroDocente extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
         btnRegistrar = new javax.swing.JButton();
         txtUsuario = new javax.swing.JTextField();
-        txtContraseña = new javax.swing.JPasswordField();
         jSeparator1 = new javax.swing.JSeparator();
-        jSeparator2 = new javax.swing.JSeparator();
         jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         btnRegistrar1 = new javax.swing.JButton();
+        btnFoto1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -49,13 +46,8 @@ public class jfrmRegistroDocente extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("Gotham Thin", 0, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("CORREO:");
+        jLabel4.setText("Usuario:");
         jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, -1, -1));
-
-        jLabel5.setFont(new java.awt.Font("Gotham Thin", 0, 18)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("CONTRASEÑA:");
-        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, -1, -1));
 
         btnRegistrar.setBackground(new java.awt.Color(73, 181, 172));
         btnRegistrar.setFont(new java.awt.Font("Gotham Extra Light", 0, 18)); // NOI18N
@@ -78,7 +70,7 @@ public class jfrmRegistroDocente extends javax.swing.JFrame {
                 btnRegistrarKeyPressed(evt);
             }
         });
-        jPanel2.add(btnRegistrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 420, 210, 60));
+        jPanel2.add(btnRegistrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 380, 210, 60));
 
         txtUsuario.setBackground(new java.awt.Color(33, 45, 62));
         txtUsuario.setFont(new java.awt.Font("Gotham Thin", 0, 18)); // NOI18N
@@ -97,27 +89,10 @@ public class jfrmRegistroDocente extends javax.swing.JFrame {
         });
         jPanel2.add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 230, 270, 40));
 
-        txtContraseña.setBackground(new java.awt.Color(33, 45, 62));
-        txtContraseña.setFont(txtContraseña.getFont().deriveFont(txtContraseña.getFont().getSize()+7f));
-        txtContraseña.setForeground(new java.awt.Color(73, 181, 172));
-        txtContraseña.setBorder(null);
-        txtContraseña.setCaretColor(new java.awt.Color(73, 181, 172));
-        txtContraseña.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                txtContraseñaKeyPressed(evt);
-            }
-        });
-        jPanel2.add(txtContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 330, 270, 36));
-
         jSeparator1.setBackground(new java.awt.Color(73, 181, 172));
         jSeparator1.setForeground(new java.awt.Color(73, 181, 172));
         jPanel2.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 270, 310, 10));
-
-        jSeparator2.setBackground(new java.awt.Color(73, 181, 172));
-        jSeparator2.setForeground(new java.awt.Color(73, 181, 172));
-        jPanel2.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 370, 310, 10));
         jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, 48, 36));
-        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 320, 48, 42));
 
         jLabel9.setFont(new java.awt.Font("Gotham Thin", 1, 24)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(73, 181, 172));
@@ -152,7 +127,30 @@ public class jfrmRegistroDocente extends javax.swing.JFrame {
                 btnRegistrar1KeyPressed(evt);
             }
         });
-        jPanel2.add(btnRegistrar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 420, 210, 60));
+        jPanel2.add(btnRegistrar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 380, 210, 60));
+
+        btnFoto1.setBackground(new java.awt.Color(73, 181, 172));
+        btnFoto1.setFont(new java.awt.Font("Gotham Extra Light", 0, 18)); // NOI18N
+        btnFoto1.setForeground(new java.awt.Color(255, 255, 255));
+        btnFoto1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Source/camara-fotografica.png"))); // NOI18N
+        btnFoto1.setText("Foto");
+        btnFoto1.setBorderPainted(false);
+        btnFoto1.setContentAreaFilled(false);
+        btnFoto1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnFoto1.setFocusPainted(false);
+        btnFoto1.setRequestFocusEnabled(false);
+        btnFoto1.setVerifyInputWhenFocusTarget(false);
+        btnFoto1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFoto1ActionPerformed(evt);
+            }
+        });
+        btnFoto1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                btnFoto1KeyPressed(evt);
+            }
+        });
+        jPanel2.add(btnFoto1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 450, 210, 60));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 410, 600));
 
@@ -178,18 +176,8 @@ jfrmRegistro.setVisible(true);
     }//GEN-LAST:event_txtUsuarioActionPerformed
 
     private void txtUsuarioKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtUsuarioKeyPressed
-            if (evt.getKeyCode() == evt.VK_ENTER) {
-                    txtContraseña.requestFocus();
-
-            }
+           
     }//GEN-LAST:event_txtUsuarioKeyPressed
-
-    private void txtContraseñaKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtContraseñaKeyPressed
-            if (evt.getKeyCode() == evt.VK_ENTER) {
-                    btnRegistrar.requestFocus();
-
-            }
-    }//GEN-LAST:event_txtContraseñaKeyPressed
 
     private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
             System.exit(0);
@@ -204,14 +192,14 @@ jfrmRegistro.setVisible(true);
         try (Connection conexion = conexionSQL.getConnection()) {
             // Obtener el usuario y la contraseña ingresados por el usuario
             String usuario = txtUsuario.getText();
-            String contraseña = new String(txtContraseña.getPassword());  // Para obtener la contraseña correctamente
+          
             // Construir la consulta SQL para autenticar al usuario
             String consultaSQL = "SELECT * FROM ingreso WHERE correo = ? AND password = ?";
             try {
                 // Preparar la consulta
                 try (PreparedStatement preparedStatement = conexion.prepareStatement(consultaSQL)) {
                     preparedStatement.setString(1, usuario);
-                    preparedStatement.setString(2, contraseña);
+                  
 
                     // Ejecutar la consulta
                     try (ResultSet resultado = preparedStatement.executeQuery()) {
@@ -237,20 +225,25 @@ jfrmRegistro.setVisible(true);
                          
     }//GEN-LAST:event_btnRegistrar1ActionPerformed
 
+    private void btnFoto1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btnFoto1KeyPressed
+
+    }//GEN-LAST:event_btnFoto1KeyPressed
+
+    private void btnFoto1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFoto1ActionPerformed
+ 
+    }//GEN-LAST:event_btnFoto1ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnFoto1;
     private javax.swing.JButton btnRegistrar;
     private javax.swing.JButton btnRegistrar1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JPasswordField txtContraseña;
     public static javax.swing.JTextField txtUsuario;
     // End of variables declaration//GEN-END:variables
 }
