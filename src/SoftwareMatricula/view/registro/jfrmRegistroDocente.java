@@ -4,9 +4,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import SoftwareAsistencia.config.ConexionSQL;
+import SofwareAsistencia.controler.metodos.FaceRecognition;
 import SofwareRegistroAsistencia.view.Lista.jfrmAsistencia;
-
-
 
 public class jfrmRegistroDocente extends javax.swing.JFrame {
   ConexionSQL conexionSQL;
@@ -133,7 +132,7 @@ public class jfrmRegistroDocente extends javax.swing.JFrame {
         btnFoto1.setFont(new java.awt.Font("Gotham Extra Light", 0, 18)); // NOI18N
         btnFoto1.setForeground(new java.awt.Color(255, 255, 255));
         btnFoto1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Source/camara-fotografica.png"))); // NOI18N
-        btnFoto1.setText("Foto");
+        btnFoto1.setText("Reconocer Rostro");
         btnFoto1.setBorderPainted(false);
         btnFoto1.setContentAreaFilled(false);
         btnFoto1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -150,7 +149,7 @@ public class jfrmRegistroDocente extends javax.swing.JFrame {
                 btnFoto1KeyPressed(evt);
             }
         });
-        jPanel2.add(btnFoto1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 450, 210, 60));
+        jPanel2.add(btnFoto1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 480, 230, 60));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 410, 600));
 
@@ -194,7 +193,7 @@ jfrmRegistro.setVisible(true);
             String usuario = txtUsuario.getText();
           
             // Construir la consulta SQL para autenticar al usuario
-            String consultaSQL = "SELECT * FROM ingreso WHERE correo = ? AND password = ?";
+            String consultaSQL = "SELECT * FROM ingreso WHERE correo = ?";
             try {
                 // Preparar la consulta
                 try (PreparedStatement preparedStatement = conexion.prepareStatement(consultaSQL)) {
@@ -230,7 +229,7 @@ jfrmRegistro.setVisible(true);
     }//GEN-LAST:event_btnFoto1KeyPressed
 
     private void btnFoto1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFoto1ActionPerformed
- 
+    
     }//GEN-LAST:event_btnFoto1ActionPerformed
 
 

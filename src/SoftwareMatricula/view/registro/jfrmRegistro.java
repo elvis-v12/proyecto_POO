@@ -2,6 +2,7 @@ package SoftwareMatricula.view.registro;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import SoftwareAsistencia.config.ConexionSQL;
+import SofwareAsistencia.controler.metodos.FaceRecognition;
 
 
 public class jfrmRegistro extends javax.swing.JFrame {
@@ -144,9 +145,8 @@ ConexionSQL conexionSQL;
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnfotoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnfotoActionPerformed
-
-
-
+FaceRecognition faceRecognition = new FaceRecognition();      
+      
     }//GEN-LAST:event_btnfotoActionPerformed
 
     private void btnfotoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btnfotoKeyPressed
@@ -170,10 +170,11 @@ ConexionSQL conexionSQL;
     }//GEN-LAST:event_btnRegresarActionPerformed
 
     private void btnRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarActionPerformed
- try {
+
+        try {
             String correo = txtUsuario.getText();
     // Preparar la consulta
-   String consultaSQL = "INSERT INTO ingreso (correo, password) VALUES (?, ?)";
+   String consultaSQL = "INSERT INTO ingreso (correo) VALUES (?)";
 PreparedStatement preparedStatement = conexionSQL.getConnection().prepareStatement(consultaSQL);
 preparedStatement.setString(1, correo); 
 
