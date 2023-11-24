@@ -5,6 +5,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import SoftwareAsistencia.config.ConexionSQL;
 import SofwareAsistencia.controler.metodos.FaceRecognition;
+import SofwareAsistencia.controler.metodos.ReconocerRostro;
 import SofwareRegistroAsistencia.view.Lista.jfrmAsistencia;
 
 public class jfrmRegistroDocente extends javax.swing.JFrame {
@@ -229,7 +230,8 @@ jfrmRegistro.setVisible(true);
     }//GEN-LAST:event_btnFoto1KeyPressed
 
     private void btnFoto1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFoto1ActionPerformed
-    
+  ReconocerRostro ReconocerRostro=new ReconocerRostro();
+   
     }//GEN-LAST:event_btnFoto1ActionPerformed
 
 

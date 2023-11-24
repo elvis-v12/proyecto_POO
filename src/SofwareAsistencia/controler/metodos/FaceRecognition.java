@@ -165,7 +165,7 @@ public class FaceRecognition {
         return image;
     }
 
-    public static void main(String[] args) {
-        javax.swing.SwingUtilities.invokeLater(() -> new FaceRecognition());
-    }
+//    public static void main(String[] args) {
+//        javax.swing.SwingUtilities.invokeLater(() -> new FaceRecognition());
+//    }
 }
