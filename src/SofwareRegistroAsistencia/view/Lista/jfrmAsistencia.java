@@ -1,11 +1,8 @@
 package SofwareRegistroAsistencia.view.Lista;
 
 import static SoftwareMatricula.util.Data.*;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import javax.swing.ButtonModel;
+import SofwareAsistencia.controler.metodos.FaceRecognition;
 import javax.swing.JCheckBox;
-import javax.swing.JToggleButton;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -49,15 +46,20 @@ public class jfrmAsistencia extends javax.swing.JFrame {
         jCheckBox1 = new javax.swing.JCheckBox();
         jLabel5 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        btnfoto = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("FORMULARIO ASISTENCIA");
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         Estado.add(jCheckBox2);
         jCheckBox2.setText("Falta");
+        getContentPane().add(jCheckBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(459, 376, -1, -1));
 
         Estado.add(jCheckBox3);
         jCheckBox3.setText("Justificación");
+        getContentPane().add(jCheckBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(519, 376, -1, -1));
 
         jTable3.setBackground(new java.awt.Color(255, 77, 94));
         jTable3.setModel(new javax.swing.table.DefaultTableModel(
@@ -78,6 +80,8 @@ public class jfrmAsistencia extends javax.swing.JFrame {
         });
         jScrollPane3.setViewportView(jTable3);
 
+        getContentPane().add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 249, 339, 239));
+
         jbtnGrabarAsistenciaAlumno.setBackground(new java.awt.Color(152, 201, 167));
         jbtnGrabarAsistenciaAlumno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Source/disco-flexible.png"))); // NOI18N
         jbtnGrabarAsistenciaAlumno.setText("GRABAR ASISTENCIA ALUMNO");
@@ -86,6 +90,7 @@ public class jfrmAsistencia extends javax.swing.JFrame {
                 jbtnGrabarAsistenciaAlumnoActionPerformed(evt);
             }
         });
+        getContentPane().add(jbtnGrabarAsistenciaAlumno, new org.netbeans.lib.awtextra.AbsoluteConstraints(371, 442, -1, 46));
 
         jbtnGrabarAsistencia.setBackground(new java.awt.Color(152, 201, 167));
         jbtnGrabarAsistencia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Source/disco-flexible.png"))); // NOI18N
@@ -95,12 +100,19 @@ public class jfrmAsistencia extends javax.swing.JFrame {
                 jbtnGrabarAsistenciaActionPerformed(evt);
             }
         });
+        getContentPane().add(jbtnGrabarAsistencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 490, 1000, 46));
+        getContentPane().add(jtxtAlumnoApellidoPaterno, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 278, 200, -1));
 
         jLabel1.setText("ID Alumno:");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(371, 214, 123, 26));
+        getContentPane().add(jtxtAlumnoApellidoMaterno, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 214, 200, -1));
 
         jLabel2.setText("Nombres:");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(371, 246, 123, 26));
+        getContentPane().add(jtxtAlumnoNombres, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 246, 200, -1));
 
         jLabel3.setText("Apellido Paterno");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(371, 278, 123, 26));
 
         jTable1.setBackground(new java.awt.Color(255, 77, 94));
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
@@ -121,118 +133,58 @@ public class jfrmAsistencia extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(jTable1);
 
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 6, 1208, 152));
+        getContentPane().add(jtxtAlumnoID, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 329, 200, -1));
+
         jLabel4.setText("Apellido Materno");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(371, 309, 123, 26));
 
         jcbxCurso.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        getContentPane().add(jcbxCurso, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 186, 200, 57));
 
         Estado.add(jCheckBox1);
         jCheckBox1.setSelected(true);
         jCheckBox1.setText("Asistencia");
+        getContentPane().add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(371, 376, -1, -1));
 
         jLabel5.setText("Asignaturas");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 164, 77, -1));
 
         jButton1.setBackground(new java.awt.Color(152, 201, 167));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton1.setText("LISTAR MATRICULA");
+        jButton1.setText("REGISTRAR ALUMNO");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1061, 310, -1, 60));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(jbtnGrabarAsistencia, javax.swing.GroupLayout.PREFERRED_SIZE, 1000, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(100, 100, 100))
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 339, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jcbxCurso, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(6, 6, 6)
-                                .addComponent(jtxtAlumnoApellidoMaterno, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(6, 6, 6)
-                                .addComponent(jtxtAlumnoNombres, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(6, 6, 6)
-                                .addComponent(jtxtAlumnoApellidoPaterno, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jtxtAlumnoID))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jCheckBox1)
-                                .addGap(12, 12, 12)
-                                .addComponent(jCheckBox2)
-                                .addGap(12, 12, 12)
-                                .addComponent(jCheckBox3))
-                            .addComponent(jbtnGrabarAsistenciaAlumno))
-                        .addGap(223, 223, 223)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1208, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(50, 50, 50)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jtxtAlumnoApellidoMaterno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(6, 6, 6)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jtxtAlumnoNombres, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(6, 6, 6)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jtxtAlumnoApellidoPaterno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(61, 61, 61)
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(6, 6, 6)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jtxtAlumnoID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(6, 6, 6)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jCheckBox1)
-                            .addComponent(jCheckBox2)
-                            .addComponent(jCheckBox3))
-                        .addGap(45, 45, 45)
-                        .addComponent(jbtnGrabarAsistenciaAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel5)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jcbxCurso, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jbtnGrabarAsistencia, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
+        btnfoto.setBackground(new java.awt.Color(73, 181, 172));
+        btnfoto.setFont(new java.awt.Font("Gotham Extra Light", 0, 18)); // NOI18N
+        btnfoto.setForeground(new java.awt.Color(255, 255, 255));
+        btnfoto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Source/camara-fotografica.png"))); // NOI18N
+        btnfoto.setText("Foto");
+        btnfoto.setBorderPainted(false);
+        btnfoto.setContentAreaFilled(false);
+        btnfoto.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnfoto.setFocusPainted(false);
+        btnfoto.setRequestFocusEnabled(false);
+        btnfoto.setVerifyInputWhenFocusTarget(false);
+        btnfoto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnfotoActionPerformed(evt);
+            }
+        });
+        btnfoto.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                btnfotoKeyPressed(evt);
+            }
+        });
+        getContentPane().add(btnfoto, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 430, 210, 60));
+
+        jLabel6.setText("jLabel6");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 250, 210, 200));
 
         pack();
         setLocationRelativeTo(null);
@@ -261,8 +213,7 @@ public class jfrmAsistencia extends javax.swing.JFrame {
                         nombresAlumno + " " + apellidoPaternoAlumno + " " + apellidoMaternoAlumno,
                         fechaRegistroAlumno, asignatura, estado
                 };
-                model.addRow(alumnoRegistrado);
-                
+                model.addRow(alumnoRegistrado);                
         }//GEN-LAST:event_jbtnGrabarAsistenciaAlumnoActionPerformed
 
         private void jbtnGrabarAsistenciaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnGrabarAsistenciaActionPerformed
@@ -271,10 +222,18 @@ public class jfrmAsistencia extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        jfrmListadoMatricula jfrmListadoMatricula=new jfrmListadoMatricula();
-            jfrmListadoMatricula.setVisible(true);
-            dispose();
+    
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void btnfotoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnfotoActionPerformed
+        FaceRecognition faceRecognition = new FaceRecognition();
+        dispose();
+
+    }//GEN-LAST:event_btnfotoActionPerformed
+
+    private void btnfotoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btnfotoKeyPressed
+
+    }//GEN-LAST:event_btnfotoKeyPressed
 
         /**
          * @param args the command line arguments
@@ -285,6 +244,7 @@ public class jfrmAsistencia extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup Estado;
+    private javax.swing.JButton btnfoto;
     private javax.swing.JButton jButton1;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JCheckBox jCheckBox2;
@@ -294,6 +254,7 @@ public class jfrmAsistencia extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTable jTable1;
