@@ -1,7 +1,7 @@
 package SoftwareAsistencia;
 
 
-import SofwareRegistroAsistencia.view.Lista.jfrmAsistencia;
+import SoftwareAsistencia.view.Lista.jfrmAsistencia;
 
 public class SoftwareMatriculaAppliation {
 
